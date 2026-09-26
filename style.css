@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Caveat:wght@600&display=swap');
 
 :root{
-  --paper:#eee9dc; --ink:#262936; --blue:#4457d6; --acid:#c6f24e;
+  --paper:#eee9dc; --ink:#262936; --blue:#4457d6; --acid:#f0c93c;
   --pink:#ff5e7a; --red:#e04a2f; --muted:#6f6d64;
   --sans:'Space Grotesk',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;

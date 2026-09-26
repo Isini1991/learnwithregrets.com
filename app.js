@@ -79,7 +79,7 @@ function sleeves() {
   catalog.innerHTML = CAT.map((a, i) => `
     <button class="card" data-album="${i}" aria-label="Open ${a.title} in the listening room">
       <span class="cover"><img src="${a.asset}" alt="${a.title} cover" loading="lazy" width="500" height="500"></span>
-      <h3>${a.title}${a.title === 'For Lovers' ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
+      <h3>${a.title}${a.title === 'Soft Spoken' ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
       <span class="cdate">${a.date}</span>
     </button>`).join('');
 }
@@ -90,7 +90,7 @@ function indexView() {
     <button class="card" data-album="${i}" aria-label="Open ${a.title} in the listening room">
       <span class="list-num">${String(n + 1).padStart(2, '0')}</span>
       <span class="cover"><img src="${a.asset}" alt="" loading="lazy" width="44" height="44"></span>
-      <h3>${a.title}${a.title === 'For Lovers' ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
+      <h3>${a.title}${a.title === 'Soft Spoken' ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
       <span class="cdate">${a.date}</span>
       <span class="list-meta">${a.tracks.length} TRACKS</span>
     </button>`).join('');
