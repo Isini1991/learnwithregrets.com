@@ -105,8 +105,8 @@ $('#list-view').addEventListener('click', () => {
   $('#list-view').setAttribute('aria-pressed', 'true'); $('#grid-view').setAttribute('aria-pressed', 'false');
 });
 
-/* ---------- featured tracks (For Lovers) ---------- */
-const featured = CAT.findIndex(a => a.title === 'For Lovers');
+/* ---------- featured tracks (BURNTSCRIPTURE) ---------- */
+const featured = CAT.findIndex(a => a.title === 'BURNTSCRIPTURE');
 const picks = CAT[featured].tracks.filter(t => !/skit/i.test(t.t)).slice(0, 4);
 $('#featured-tracks').innerHTML = picks.map(t => `
   <button class="track-row" data-album="${featured}" data-track="${t.t}">
