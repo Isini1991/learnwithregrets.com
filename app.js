@@ -79,7 +79,7 @@ function sleeves() {
   catalog.innerHTML = CAT.map((a, i) => `
     <button class="card" data-album="${i}" aria-label="Open ${a.title} in the listening room">
       <span class="cover"><img src="${a.asset}" alt="${a.title} cover" loading="lazy" width="500" height="500"></span>
-      <h3>${a.title}${a.title === 'BURNTSCRIPTURE' ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
+      <h3>${a.title}${a.title === "Philosopher's Stoned" ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
       <span class="cdate">${a.date}</span>
     </button>`).join('');
 }
@@ -90,7 +90,7 @@ function indexView() {
     <button class="card" data-album="${i}" aria-label="Open ${a.title} in the listening room">
       <span class="list-num">${String(n + 1).padStart(2, '0')}</span>
       <span class="cover"><img src="${a.asset}" alt="" loading="lazy" width="44" height="44"></span>
-      <h3>${a.title}${a.title === 'BURNTSCRIPTURE' ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
+      <h3>${a.title}${a.title === "Philosopher's Stoned" ? '<span class="new-tag">JUST OUT</span>' : ''}</h3>
       <span class="cdate">${a.date}</span>
       <span class="list-meta">${a.tracks.length} TRACKS</span>
     </button>`).join('');
@@ -105,8 +105,8 @@ $('#list-view').addEventListener('click', () => {
   $('#list-view').setAttribute('aria-pressed', 'true'); $('#grid-view').setAttribute('aria-pressed', 'false');
 });
 
-/* ---------- featured tracks (BURNTSCRIPTURE) ---------- */
-const featured = CAT.findIndex(a => a.title === 'BURNTSCRIPTURE');
+/* ---------- featured tracks (Philosopher's Stoned) ---------- */
+const featured = CAT.findIndex(a => a.title === "Philosopher's Stoned");
 const picks = CAT[featured].tracks.filter(t => !/skit/i.test(t.t)).slice(0, 4);
 $('#featured-tracks').innerHTML = picks.map(t => `
   <button class="track-row" data-album="${featured}" data-track="${t.t}">
