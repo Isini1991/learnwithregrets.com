@@ -30,7 +30,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install beautifulsoup4 pillow
+          pip install -r requirements.txt
 
       - name: Run Bandcamp sync engine
         run: |
