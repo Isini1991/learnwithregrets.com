@@ -2,8 +2,8 @@ name: Auto-Sync Bandcamp Discography
 
 on:
   schedule:
-    # Run every 6 hours (00:15, 06:15, 12:15, 18:15 UTC)
-    - cron: '15 0,6,12,18 * * *'
+    # Run every 2 hours (00:15, 02:15, 04:15, ... UTC)
+    - cron: '15 */2 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -26,11 +26,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
 
       - name: Run Bandcamp sync engine
         run: |

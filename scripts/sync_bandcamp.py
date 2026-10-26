@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
 """
 Sync Bandcamp releases for boy (Adam Leach) / Call Me A Friend.
-Fetches https://callmeafriend.bandcamp.com/music, discovers all releases,
-downloads high-res album covers, and updates data.json, data.js, and index.html.
+Discovers all releases, checks and updates tracklists, downloads artwork,
+and keeps data.json, data.js, and index.html completely in sync.
+
+Zero third-party dependencies: uses standard library only.
 """
 
 import os
 import sys
 import re
 import json
+import time
 import html as html_lib
 import urllib.request
-import time
-from datetime import datetime
-from bs4 import BeautifulSoup
+import concurrent.futures
+from datetime import datetime, timezone
+from html.parser import HTMLParser
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS_DIR = os.path.join(ROOT_DIR, 'assets')
@@ -24,9 +27,10 @@ LAST_SYNC = os.path.join(ROOT_DIR, '.github', 'last_sync.json')
 
 BANDCAMP_URL = 'https://callmeafriend.bandcamp.com/music'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+TOP_RECENT_ALBUMS_TO_VERIFY = 6  # Always re-verify tracklists of latest N releases
 
 
-def fetch_url(url, retries=3, delay=2):
+def fetch_url(url, retries=3, delay=1):
     req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
     for attempt in range(retries):
         try:
@@ -53,8 +57,56 @@ def download_file(url, target_path, retries=3):
             if attempt == retries - 1:
                 print(f"Error downloading {url} -> {target_path}: {e}")
                 return False
-            time.sleep(2)
+            time.sleep(1)
     return False
+
+
+class MusicGridParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.in_grid_item = False
+        self.in_title = False
+        self.current_title = ''
+        self.current_url = ''
+        self.current_art_id = None
+        self.items = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs_d = dict(attrs)
+        if tag == 'li' and 'music-grid-item' in attrs_d.get('class', ''):
+            self.in_grid_item = True
+            self.current_title = ''
+            self.current_url = ''
+            self.current_art_id = None
+        elif self.in_grid_item:
+            if tag == 'a' and not self.current_url:
+                href = attrs_d.get('href', '')
+                if href.startswith('/'):
+                    href = 'https://callmeafriend.bandcamp.com' + href
+                self.current_url = href
+            elif tag == 'img' and not self.current_art_id:
+                src = attrs_d.get('src', '')
+                m = re.search(r'/img/a(\d+)_', src)
+                if m:
+                    self.current_art_id = int(m.group(1))
+            elif tag == 'p' and 'title' in attrs_d.get('class', ''):
+                self.in_title = True
+
+    def handle_endtag(self, tag):
+        if tag == 'p' and self.in_title:
+            self.in_title = False
+        elif tag == 'li' and self.in_grid_item:
+            if self.current_title and self.current_url:
+                self.items.append({
+                    'title': self.current_title.strip(),
+                    'url': self.current_url,
+                    'art_id': self.current_art_id
+                })
+            self.in_grid_item = False
+
+    def handle_data(self, data):
+        if self.in_title:
+            self.current_title += data
 
 
 def get_music_catalog():
@@ -63,36 +115,13 @@ def get_music_catalog():
     if not page_html:
         raise RuntimeError("Failed to fetch Bandcamp music page.")
 
-    soup = BeautifulSoup(page_html, 'html.parser')
-    grid_items = soup.find_all('li', class_=re.compile(r'music-grid-item'))
+    parser = MusicGridParser()
+    parser.feed(page_html)
+    discovered = parser.items
+    seen_urls = {it['url'] for it in discovered}
 
-    discovered = []
-    seen_urls = set()
-
-    for li in grid_items:
-        t_el = li.find('p', class_='title')
-        a_el = li.find('a')
-        img_el = li.find('img')
-        if a_el and t_el:
-            href = a_el['href']
-            full_url = 'https://callmeafriend.bandcamp.com' + href if href.startswith('/') else href
-            if full_url in seen_urls:
-                continue
-            seen_urls.add(full_url)
-
-            img_src = img_el.get('src', '') if img_el else ''
-            art_id = None
-            m_art = re.search(r'/img/a(\d+)_', img_src)
-            if m_art:
-                art_id = int(m_art.group(1))
-
-            discovered.append({
-                'title': t_el.text.strip(),
-                'url': full_url,
-                'art_id': art_id
-            })
-
-    m = re.search(r'data-client-items=\"([^\"]+)\"', page_html)
+    # Extract archived releases from data-client-items
+    m = re.search(r'data-client-items="([^"]+)"', page_html)
     if m:
         try:
             client_items = json.loads(html_lib.unescape(m.group(1)))
@@ -105,13 +134,12 @@ def get_music_catalog():
                 discovered.append({
                     'title': it.get('title'),
                     'url': full_url,
-                    'art_id': it.get('art_id'),
-                    'id': str(it.get('id', ''))
+                    'art_id': it.get('art_id')
                 })
         except Exception as e:
             print(f"Warning: could not parse data-client-items: {e}")
 
-    print(f"Discovered {len(discovered)} releases from Bandcamp.")
+    print(f"Discovered {len(discovered)} releases currently on Bandcamp.")
     return discovered
 
 
@@ -120,7 +148,7 @@ def fetch_album_details(url):
     if not html_content:
         return None
 
-    m = re.search(r'data-tralbum=\"([^\"]+)\"', html_content)
+    m = re.search(r'data-tralbum="([^"]+)"', html_content)
     if not m:
         m = re.search(r'var TrAlbumData = ({.*?});', html_content, re.DOTALL)
         if not m:
@@ -188,53 +216,53 @@ def update_index_html(catalog):
     latest_about = latest.get('about') or 'A record by boy.'
     latest_url = latest.get('url', BANDCAMP_URL)
 
-    # 1. Total counts
+    # 1. Total album counts
     html = re.sub(r'The records <sup>\d+</sup>', f'The records <sup>{total}</sup>', html)
     html = re.sub(r'\d+ RECORDS\. KEEP DIGGING\.', f'{total} RECORDS. KEEP DIGGING.', html)
     html = re.sub(r'The record shelf<span> \(\d+\)</span>', f'The record shelf<span> ({total})</span>', html)
 
     # 2. Hero front sleeve
-    pattern_sleeve = r'(<button class=\"front-sleeve\" data-album=\"0\" aria-label=\")[^\"]*(\"><span class=\"sleeve-bar mono\"><span>BOY / )[^<]*(</span><span>SIDE A ↗</span></span><img src=\")[^\"]*(\" alt=\")[^\"]*(\")'
+    pattern_sleeve = r'(<button class="front-sleeve" data-album="0" aria-label=")[^"]*("><span class="sleeve-bar mono"><span>BOY / )[^<]*(</span><span>SIDE A ↗</span></span><img src=")[^"]*(" alt=")[^"]*(")'
     repl_sleeve = rf'\g<1>Open {latest_title} in the listening room\g<2>{latest_upper}\g<3>{latest_asset}\g<4>{latest_title} album cover\g<5>'
     html = re.sub(pattern_sleeve, repl_sleeve, html)
 
-    # 3. Listening room
-    pattern_art = r'(<div class=\"feature-art\"><img src=\")[^\"]*(\" alt=\")[^\"]*(\" width=\"500\" height=\"500\" loading=\"lazy\"><span class=\"art-label mono\">BOY — )[^<]*(</span></div>)'
+    # 3. Listening room art
+    pattern_art = r'(<div class="feature-art"><img src=")[^"]*(" alt=")[^"]*(" width="500" height="500" loading="lazy"><span class="art-label mono">BOY — )[^<]*(</span></div>)'
     repl_art = rf'\g<1>{latest_asset}\g<2>{latest_title}\g<3>{latest_upper}\g<4>'
     html = re.sub(pattern_art, repl_art, html)
 
-    # Title in listening room: break into words
+    # 4. Listening room title
     words = latest_title.split()
     if len(words) == 1:
         h2_title = f'<em>{words[0]}.</em>'
     elif len(words) == 2:
         h2_title = f'{words[0]}<br><em>{words[1]}.</em>'
     else:
-        h2_title = f"{' '.join(words[:-1])}<br><em>{words[-1]}.</em>"
+        h2_title = f"{words[0]} {' '.join(words[1:-1])}<br><em>{words[-1]}.</em>" if len(words) > 2 else f"{words[0]}<br><em>{words[1]}.</em>"
 
     html = re.sub(
-        r'(<div class=\"feature-copy\"><span class=\"eyebrow\">START HERE</span><h2>).*?(</h2>)',
+        r'(<div class="feature-copy"><span class="eyebrow">START HERE</span><h2>).*?(</h2>)',
         rf'\g<1>{h2_title}\g<2>',
         html,
         flags=re.DOTALL
     )
 
-    # Description
-    clean_about = latest_about.replace('\r', '').replace('\n', ' ').strip()
+    # 5. Listening room description
+    clean_about = ' '.join(latest_about.split())
     html = re.sub(
-        r'(<p class=\"feature-description\">).*?(</p>)',
+        r'(<p class="feature-description">).*?(</p>)',
         rf'\g<1>{clean_about}\g<2>',
         html
     )
 
-    # Support on Bandcamp link
+    # 6. Bandcamp support link
     html = re.sub(
-        r'<a href=\"https://callmeafriend\.bandcamp\.com/album/[^\"]*\" target=\"_blank\" rel=\"noopener\">Support on Bandcamp ↗</a>',
+        r'<a href="https://callmeafriend\.bandcamp\.com/album/[^"]*" target="_blank" rel="noopener">Support on Bandcamp ↗</a>',
         f'<a href="{latest_url}" target="_blank" rel="noopener">Support on Bandcamp ↗</a>',
         html
     )
 
-    # Bump cache buster timestamp
+    # 7. Cache buster
     v_tag = int(time.time())
     html = re.sub(r'data\.js\?v=\w+', f'data.js?v={v_tag}', html)
     html = re.sub(r'app\.js\?v=\w+', f'app.js?v={v_tag}', html)
@@ -249,7 +277,6 @@ def main():
     os.makedirs(ASSETS_DIR, exist_ok=True)
     os.makedirs(os.path.join(ROOT_DIR, '.github'), exist_ok=True)
 
-    # Load existing catalog
     existing_catalog = []
     if os.path.exists(DATA_JSON):
         try:
@@ -265,10 +292,45 @@ def main():
         print("No releases found on Bandcamp.")
         sys.exit(0)
 
+    # Pre-fetch details in parallel for albums that need deep inspection:
+    # 1. Any new album
+    # 2. Any album whose art_id changed
+    # 3. Any album with missing asset file
+    # 4. Top N recent albums (where tracklists or edits most frequently happen)
+    urls_to_fetch = set()
+    for idx, item in enumerate(discovered):
+        url = item['url']
+        art_id = item.get('art_id')
+        slug = url.rstrip('/').split('/')[-1]
+        asset_abs = os.path.join(ASSETS_DIR, f"{slug}.jpg")
+        existing = existing_by_url.get(url)
+
+        if not existing or not os.path.exists(asset_abs):
+            urls_to_fetch.add(url)
+        elif art_id and existing.get('art_id') != art_id:
+            urls_to_fetch.add(url)
+        elif idx < TOP_RECENT_ALBUMS_TO_VERIFY:
+            # Always check tracklist & details for recent releases
+            urls_to_fetch.add(url)
+
+    fetched_details = {}
+    if urls_to_fetch:
+        print(f"Fetching full details for {len(urls_to_fetch)} albums in parallel...")
+        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+            future_to_url = {pool.submit(fetch_album_details, u): u for u in urls_to_fetch}
+            for future in concurrent.futures.as_completed(future_to_url):
+                u = future_to_url[future]
+                try:
+                    res = future.result()
+                    if res:
+                        fetched_details[u] = res
+                except Exception as e:
+                    print(f"Error fetching details for {u}: {e}")
+
     updated_catalog = []
     changes_made = []
 
-    for item in discovered:
+    for idx, item in enumerate(discovered):
         url = item['url']
         art_id = item.get('art_id')
         slug = url.rstrip('/').split('/')[-1]
@@ -276,36 +338,18 @@ def main():
         asset_abs = os.path.join(ROOT_DIR, asset_rel)
 
         existing = existing_by_url.get(url)
+        details = fetched_details.get(url)
 
-        # Check if we can reuse existing cached data
-        need_fetch = False
         if not existing:
-            need_fetch = True
-            changes_made.append(f"NEW ALBUM: {item['title']} ({url})")
-        elif art_id and existing.get('art_id') != art_id:
-            need_fetch = True
-            changes_made.append(f"UPDATED COVER: {item['title']} (art_id {existing.get('art_id')} -> {art_id})")
-        elif not os.path.exists(asset_abs):
-            need_fetch = True
-            changes_made.append(f"MISSING ASSET: {asset_rel}")
-
-        if need_fetch:
-            print(f"Fetching details for: {item['title']} ({url})...")
-            details = fetch_album_details(url)
+            # Brand new release
             if not details:
-                print(f"Failed to fetch details for {url}, keeping existing if available.")
-                if existing:
-                    updated_catalog.append(existing)
                 continue
-
-            # Download artwork
             target_art_id = details.get('art_id') or art_id
             if target_art_id:
-                img_download_url = f"https://f4.bcbits.com/img/a{target_art_id}_10.jpg"
-                print(f"Downloading artwork {img_download_url} -> {asset_abs}...")
-                download_file(img_download_url, asset_abs)
+                img_url = f"https://f4.bcbits.com/img/a{target_art_id}_10.jpg"
+                download_file(img_url, asset_abs)
 
-            album_entry = {
+            entry = {
                 'title': details['title'] or item['title'],
                 'url': url,
                 'asset': asset_rel,
@@ -316,30 +360,54 @@ def main():
                 'about': details['about'],
                 'tracks': details['tracks']
             }
-            updated_catalog.append(album_entry)
+            updated_catalog.append(entry)
+            changes_made.append(f"NEW ALBUM: {entry['title']} ({url})")
+
+        elif details:
+            # Existing release with fresh check
+            entry = dict(existing)
+            target_art_id = details.get('art_id') or art_id
+
+            # Check cover change or missing asset
+            if target_art_id and (existing.get('art_id') != target_art_id or not os.path.exists(asset_abs)):
+                img_url = f"https://f4.bcbits.com/img/a{target_art_id}_10.jpg"
+                print(f"Updating artwork for {entry['title']} -> {asset_abs}...")
+                download_file(img_url, asset_abs)
+                entry['art_id'] = target_art_id
+                changes_made.append(f"UPDATED COVER: {entry['title']}")
+
+            # Check tracklist changes (addition, removal, rename, or order change)
+            old_tracks = existing.get('tracks', [])
+            new_tracks = details.get('tracks', [])
+            if old_tracks != new_tracks:
+                entry['tracks'] = new_tracks
+                changes_made.append(f"UPDATED TRACKLIST for {entry['title']}: {len(old_tracks)} -> {len(new_tracks)} tracks")
+
+            # Check bio/about changes
+            if details.get('about') != existing.get('about'):
+                entry['about'] = details.get('about')
+                changes_made.append(f"UPDATED ABOUT for {entry['title']}")
+
+            # Check title changes
+            if details.get('title') and details['title'] != existing.get('title'):
+                entry['title'] = details['title']
+                changes_made.append(f"UPDATED TITLE: {existing.get('title')} -> {details['title']}")
+
+            updated_catalog.append(entry)
         else:
-            # Reusing existing, ensure art_id is preserved
+            # Existing release, no changes needed
             if art_id and not existing.get('art_id'):
                 existing['art_id'] = art_id
             updated_catalog.append(existing)
 
-    # Check for order changes or length differences
+    # Check for removed albums or reordering
     old_titles = [x.get('title') for x in existing_catalog]
     new_titles = [x.get('title') for x in updated_catalog]
     if old_titles != new_titles:
-        changes_made.append(f"CATALOG ORDER/ITEMS CHANGED: {len(old_titles)} -> {len(new_titles)} albums")
-
-    # Keepalive check: if no changes in 40+ days, touch last_sync to prevent GitHub Actions cron disable
-    try:
-        import subprocess
-        res = subprocess.run(['git', 'log', '-1', '--format=%ct'], cwd=ROOT_DIR, capture_output=True, text=True)
-        if res.stdout.strip():
-            last_ts = int(res.stdout.strip())
-            days_since = (time.time() - last_ts) / 86400
-            if days_since >= 40 and not changes_made:
-                changes_made.append(f"KEEPALIVE: {days_since:.1f} days since last commit; refreshing cron timer")
-    except Exception as e:
-        print(f"Keepalive check notice: {e}")
+        removed = set(old_titles) - set(new_titles)
+        if removed:
+            changes_made.append(f"REMOVED ALBUMS FROM BANDCAMP: {', '.join(removed)}")
+        changes_made.append(f"CATALOG ORDER/COUNT CHANGED: {len(old_titles)} -> {len(new_titles)} albums")
 
     print(f"\nFinal catalog contains {len(updated_catalog)} releases.")
 
@@ -356,7 +424,7 @@ def main():
 
     # Write keepalive / sync record
     sync_record = {
-        'timestamp': datetime.utcnow().isoformat() + 'Z',
+        'timestamp': datetime.now(timezone.utc).isoformat(),
         'total_releases': len(updated_catalog),
         'latest_album': updated_catalog[0]['title'] if updated_catalog else '',
         'changes': changes_made
@@ -365,11 +433,11 @@ def main():
         json.dump(sync_record, f, indent=2)
 
     if changes_made:
-        print("\nSummary of updates:")
+        print("\nSummary of updates applied:")
         for c in changes_made:
             print(" -", c)
     else:
-        print("\nNo new albums or cover changes detected.")
+        print("\nNo new albums, tracklist edits, or cover changes detected.")
 
     print("\nSync completed successfully.")
 
