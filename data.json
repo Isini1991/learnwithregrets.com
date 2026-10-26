@@ -64,78 +64,6 @@
     ]
   },
   {
-    "title": "Granddaddy Purple",
-    "url": "https://callmeafriend.bandcamp.com/album/granddaddy-purple",
-    "asset": "assets/granddaddy-purple.jpg",
-    "id": "3682463523",
-    "art_id": 1218046068,
-    "iso": "2026-10-23",
-    "date": "OCT 23, 2026",
-    "about": "Dedicated To Adam Yauch",
-    "tracks": [
-      {
-        "t": "Nah [intro]",
-        "d": "0:15"
-      },
-      {
-        "t": "Dedicated To The Outsider",
-        "d": "3:41"
-      },
-      {
-        "t": "Metamorphic",
-        "d": "2:47"
-      },
-      {
-        "t": "Bebop Don't Stop",
-        "d": "2:44"
-      },
-      {
-        "t": "Looks In The Iris",
-        "d": "2:23"
-      },
-      {
-        "t": "Out Of Bubblegum [skit]",
-        "d": "0:49"
-      },
-      {
-        "t": "How I Feel When You Don't Listen",
-        "d": "3:02"
-      },
-      {
-        "t": "Dig This",
-        "d": "1:57"
-      },
-      {
-        "t": "What About The Exes That Come Back?",
-        "d": "3:40"
-      },
-      {
-        "t": "VB Is For Lovers",
-        "d": "3:32"
-      },
-      {
-        "t": "Colour Is Blue [skit]",
-        "d": "0:51"
-      },
-      {
-        "t": "Chronic Cottonmouth",
-        "d": "2:30"
-      },
-      {
-        "t": "Up Till 6 In The Morning",
-        "d": "4:34"
-      },
-      {
-        "t": "You're Just Another Apple Fallen Off The Tree Freestyle",
-        "d": "4:11"
-      },
-      {
-        "t": "Dead Tired [outro]",
-        "d": "0:45"
-      }
-    ]
-  },
-  {
     "title": "Equal Or Greater Than",
     "url": "https://callmeafriend.bandcamp.com/album/equal-or-greater-than",
     "asset": "assets/equal-or-greater-than.jpg",
@@ -536,6 +464,7 @@
     "url": "https://callmeafriend.bandcamp.com/album/zzz",
     "asset": "assets/zzz.jpg",
     "id": "43852049",
+    "art_id": 4182951026,
     "iso": "2026-09-24",
     "date": "SEP 24, 2026",
     "about": null,
@@ -546,11 +475,7 @@
       },
       {
         "t": "Louis Armstrong Wise Lessons",
-        "d": "3:42"
-      },
-      {
-        "t": "First-Class Relics",
-        "d": "3:01"
+        "d": "3:43"
       },
       {
         "t": "Dying Too Young",
@@ -561,12 +486,12 @@
         "d": "3:05"
       },
       {
-        "t": "Redemption [skit #2]",
-        "d": "1:41"
-      },
-      {
         "t": "Adam Bani",
         "d": "2:41"
+      },
+      {
+        "t": "Redemption [skit #2]",
+        "d": "1:41"
       },
       {
         "t": "Starry Night",
@@ -574,7 +499,7 @@
       },
       {
         "t": "Dance Of Death",
-        "d": "2:16"
+        "d": "2:17"
       },
       {
         "t": "Saraswati Bollywood \"Globetrotters II\"",
@@ -582,7 +507,7 @@
       },
       {
         "t": "One Nation Under God",
-        "d": "2:17"
+        "d": "2:18"
       },
       {
         "t": "Ketchup [skit #3]",

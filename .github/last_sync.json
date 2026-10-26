@@ -1,6 +1,9 @@
 {
-  "timestamp": "2026-10-25T09:28:51.784212Z",
-  "total_releases": 25,
+  "timestamp": "2026-10-26T09:55:04.927372Z",
+  "total_releases": 24,
   "latest_album": "Below The Average",
-  "changes": []
+  "changes": [
+    "UPDATED COVER: zzZ (art_id None -> 4182951026)",
+    "CATALOG ORDER/ITEMS CHANGED: 25 -> 24 albums"
+  ]
 }
