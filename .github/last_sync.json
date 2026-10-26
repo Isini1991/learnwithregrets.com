@@ -1,6 +1,16 @@
 {
-  "timestamp": "2026-10-26T17:08:01.546612+00:00",
-  "total_releases": 24,
+  "timestamp": "2026-10-26T22:37:04.246820+00:00",
+  "total_releases": 20,
   "latest_album": "Below The Average",
-  "changes": []
+  "changes": [
+    "UPDATED TRACKLIST for Equal Or Greater Than: 18 -> 24 tracks",
+    "UPDATED TRACKLIST for BURNTSCRIPTURE: 12 -> 12 tracks",
+    "UPDATED TRACKLIST for The Akkadian Abstract: 12 -> 15 tracks",
+    "UPDATED COVER: Hometown",
+    "UPDATED TRACKLIST for Hometown: 10 -> 10 tracks",
+    "UPDATED COVER: For Lovers",
+    "UPDATED TRACKLIST for For Lovers: 12 -> 12 tracks",
+    "REMOVED ALBUMS FROM BANDCAMP: Infinite, Diss Stress, zzZ, Pinku Lemonade",
+    "CATALOG ORDER/COUNT CHANGED: 24 -> 20 albums"
+  ]
 }

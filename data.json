@@ -82,12 +82,20 @@
         "d": "3:03"
       },
       {
+        "t": "Yours Truly",
+        "d": "2:52"
+      },
+      {
         "t": "You Gotta Believe",
         "d": "3:20"
       },
       {
         "t": "Dedicated To Your Girlfriend",
         "d": "2:37"
+      },
+      {
+        "t": "Egolove",
+        "d": "2:45"
       },
       {
         "t": "Music Major [skit]",
@@ -106,8 +114,16 @@
         "d": "3:15"
       },
       {
+        "t": "Ongoing Quaila",
+        "d": "3:01"
+      },
+      {
         "t": "Sanskrit [skit]",
         "d": "0:34"
+      },
+      {
+        "t": "Immensity Of Space",
+        "d": "3:55"
       },
       {
         "t": "Walk And Talk",
@@ -134,8 +150,16 @@
         "d": "3:02"
       },
       {
+        "t": "Omniscience",
+        "d": "4:00"
+      },
+      {
         "t": "Play Something [skit]",
         "d": "0:14"
+      },
+      {
+        "t": "LIFE Magazine",
+        "d": "2:03"
       },
       {
         "t": "The Blueprint",
@@ -144,66 +168,6 @@
       {
         "t": "Just Like Ginsberg, Gone With The Wind Freestyle",
         "d": "3:40"
-      }
-    ]
-  },
-  {
-    "title": "Infinite",
-    "url": "https://callmeafriend.bandcamp.com/album/infinite",
-    "asset": "assets/infinite.jpg",
-    "id": "3041280033",
-    "art_id": 3516355112,
-    "iso": "2026-10-13",
-    "date": "OCT 13, 2026",
-    "about": null,
-    "tracks": [
-      {
-        "t": "Just A Fix For Everything [skit]",
-        "d": "0:22"
-      },
-      {
-        "t": "Immensity Of Space",
-        "d": "3:55"
-      },
-      {
-        "t": "Yours Truly",
-        "d": "2:52"
-      },
-      {
-        "t": "Ongoing Qualia",
-        "d": "3:01"
-      },
-      {
-        "t": "EGOLOVE",
-        "d": "2:45"
-      },
-      {
-        "t": "Honey Gets More Flies To It, Than Doth Vinegar [skit]",
-        "d": "0:42"
-      },
-      {
-        "t": "LIFE Magazine",
-        "d": "2:03"
-      },
-      {
-        "t": "Omniscience",
-        "d": "4:00"
-      },
-      {
-        "t": "Code of Ur-Nammu",
-        "d": "3:15"
-      },
-      {
-        "t": "Eternality",
-        "d": "2:59"
-      },
-      {
-        "t": "I Never Joke Around [skit]",
-        "d": "1:40"
-      },
-      {
-        "t": "Coefficient",
-        "d": "3:49"
       }
     ]
   },
@@ -354,10 +318,6 @@
         "d": "2:38"
       },
       {
-        "t": "LEFTMYLEFTEYE",
-        "d": "2:55"
-      },
-      {
         "t": "PATCHOULISCRUBS",
         "d": "3:15"
       },
@@ -394,6 +354,10 @@
         "d": "3:34"
       },
       {
+        "t": "LEFTMYLEFTEYE",
+        "d": "2:55"
+      },
+      {
         "t": "GODISINTHERAIN [outro]",
         "d": "1:29"
       }
@@ -410,8 +374,8 @@
     "about": null,
     "tracks": [
       {
-        "t": "Skit #1",
-        "d": "0:52"
+        "t": "Rebirth [skit]",
+        "d": "1:23"
       },
       {
         "t": "Jumped @ 4am",
@@ -434,83 +398,39 @@
         "d": "3:28"
       },
       {
-        "t": "Skit #2",
-        "d": "0:41"
-      },
-      {
         "t": "Looking After You Like I'm Your Angel",
         "d": "4:04"
       },
       {
-        "t": "Soft Spoken Angels",
-        "d": "3:08"
+        "t": "Redemption [skit]",
+        "d": "1:41"
+      },
+      {
+        "t": "Saraswati Bollywood",
+        "d": "3:30"
       },
       {
         "t": "From Me To You",
         "d": "2:41"
       },
       {
+        "t": "Dance Of Death",
+        "d": "2:17"
+      },
+      {
         "t": "Dues and Don'ts",
         "d": "3:17"
-      },
-      {
-        "t": "Skit #3",
-        "d": "1:26"
-      }
-    ]
-  },
-  {
-    "title": "zzZ",
-    "url": "https://callmeafriend.bandcamp.com/album/zzz",
-    "asset": "assets/zzz.jpg",
-    "id": "43852049",
-    "art_id": 4182951026,
-    "iso": "2026-09-24",
-    "date": "SEP 24, 2026",
-    "about": null,
-    "tracks": [
-      {
-        "t": "Rebirth [skit #1]",
-        "d": "1:23"
-      },
-      {
-        "t": "Louis Armstrong Wise Lessons",
-        "d": "3:43"
       },
       {
         "t": "Dying Too Young",
         "d": "3:38"
       },
       {
-        "t": "Globetrotters",
-        "d": "3:05"
-      },
-      {
-        "t": "Adam Bani",
-        "d": "2:41"
-      },
-      {
-        "t": "Redemption [skit #2]",
-        "d": "1:41"
-      },
-      {
-        "t": "Starry Night",
+        "t": "Starry Night Freestyle",
         "d": "2:15"
       },
       {
-        "t": "Dance Of Death",
-        "d": "2:17"
-      },
-      {
-        "t": "Saraswati Bollywood \"Globetrotters II\"",
-        "d": "3:30"
-      },
-      {
-        "t": "One Nation Under God",
-        "d": "2:18"
-      },
-      {
-        "t": "Ketchup [skit #3]",
+        "t": "Ketchup [skit]",
         "d": "2:04"
       }
     ]
@@ -538,7 +458,7 @@
       },
       {
         "t": "Sinatra Soulmate",
-        "d": "3:26"
+        "d": "3:27"
       },
       {
         "t": "Ancestors Freestyle",
@@ -546,11 +466,11 @@
       },
       {
         "t": "Keep It Clean [skit #2]",
-        "d": "2:02"
+        "d": "2:03"
       },
       {
         "t": "City Of God",
-        "d": "3:12"
+        "d": "3:13"
       },
       {
         "t": "Racing Thoughts",
@@ -564,7 +484,8 @@
         "t": "Nothing Serious [skit #3]",
         "d": "1:34"
       }
-    ]
+    ],
+    "art_id": 406143863
   },
   {
     "title": "For Lovers",
@@ -577,19 +498,19 @@
     "tracks": [
       {
         "t": "My People",
-        "d": "3:37"
+        "d": "3:38"
       },
       {
         "t": "To Be Is Not To Be",
-        "d": "2:35"
+        "d": "2:36"
       },
       {
         "t": "Mother Mary",
-        "d": "2:39"
+        "d": "2:40"
       },
       {
         "t": "Ben Hogan's [skit #1]",
-        "d": "0:47"
+        "d": "0:48"
       },
       {
         "t": "432",
@@ -597,7 +518,7 @@
       },
       {
         "t": "Soldier",
-        "d": "2:35"
+        "d": "2:36"
       },
       {
         "t": "Best Apologize [skit#2]",
@@ -605,7 +526,7 @@
       },
       {
         "t": "What's Happening?",
-        "d": "4:05"
+        "d": "4:06"
       },
       {
         "t": "Never Odd Or Even",
@@ -621,9 +542,10 @@
       },
       {
         "t": "For Love",
-        "d": "2:17"
+        "d": "2:18"
       }
-    ]
+    ],
+    "art_id": 504999842
   },
   {
     "title": "Meteorite For People",
@@ -681,69 +603,6 @@
       {
         "t": "Praying Mantis",
         "d": "2:05"
-      }
-    ]
-  },
-  {
-    "title": "Diss Stress",
-    "url": "https://callmeafriend.bandcamp.com/album/diss-stress",
-    "asset": "assets/diss-stress.jpg",
-    "id": "510880060",
-    "iso": "2026-09-12",
-    "date": "SEP 12, 2026",
-    "about": null,
-    "tracks": [
-      {
-        "t": "Lesson #1 [skit]",
-        "d": "1:26"
-      },
-      {
-        "t": "Miss Stress",
-        "d": "2:30"
-      },
-      {
-        "t": "Outside Your Reality",
-        "d": "2:34"
-      },
-      {
-        "t": "Lesson #2 [skit]",
-        "d": "2:05"
-      },
-      {
-        "t": "Coup De'Taught",
-        "d": "2:01"
-      },
-      {
-        "t": "Third Wheel",
-        "d": "3:25"
-      },
-      {
-        "t": "Lesson #3 [skit]",
-        "d": "1:32"
-      },
-      {
-        "t": "Street Question [Miss Stress #2]",
-        "d": "3:32"
-      },
-      {
-        "t": "Stuck Around",
-        "d": "3:19"
-      },
-      {
-        "t": "The Big Picture",
-        "d": "2:47"
-      },
-      {
-        "t": "Good Ole Days",
-        "d": "2:50"
-      },
-      {
-        "t": "Lesson #4 [skit]",
-        "d": "0:28"
-      },
-      {
-        "t": "Earth's Inertia",
-        "d": "4:00"
       }
     ]
   },
@@ -862,65 +721,6 @@
       {
         "t": "Futuristic Bebop Drug Shutdown",
         "d": "3:45"
-      }
-    ]
-  },
-  {
-    "title": "Pinku Lemonade",
-    "url": "https://callmeafriend.bandcamp.com/album/pinku-lemonade",
-    "asset": "assets/pinku-lemonade.jpg",
-    "id": "159621394",
-    "iso": "2026-09-17",
-    "date": "SEP 17, 2026",
-    "about": "dedicated to bruce leekix, knowledge, and MF DOOM",
-    "tracks": [
-      {
-        "t": "miracles [intro]",
-        "d": "1:41"
-      },
-      {
-        "t": "buddha fed",
-        "d": "4:49"
-      },
-      {
-        "t": "weight of church bells",
-        "d": "3:22"
-      },
-      {
-        "t": "zhi-de",
-        "d": "2:01"
-      },
-      {
-        "t": "indigo ancestors",
-        "d": "2:58"
-      },
-      {
-        "t": "my people [skit]",
-        "d": "1:10"
-      },
-      {
-        "t": "mother earth",
-        "d": "3:28"
-      },
-      {
-        "t": "acid truths",
-        "d": "2:39"
-      },
-      {
-        "t": "borderland freestyle",
-        "d": "1:41"
-      },
-      {
-        "t": "munchin' on some grandame",
-        "d": "3:19"
-      },
-      {
-        "t": "on the trinity",
-        "d": "3:00"
-      },
-      {
-        "t": "resurrected drunkard [outro]",
-        "d": "2:06"
       }
     ]
   },
