@@ -164,8 +164,9 @@ footer{background:var(--ink);color:var(--paper);display:flex;gap:2rem;align-item
 footer .mono{color:#b9b6ab;line-height:1.7}
 footer a:last-child{margin-left:auto;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-decoration:none}
 footer a:last-child:hover{color:var(--acid)}
-.concept{background:var(--blue);color:var(--paper);text-align:center;padding:.5rem;letter-spacing:.1em}
-.concept span{opacity:.7}
+.concept{background:var(--ink);border-top:1px solid rgba(238,233,220,.12);color:#b9b6ab;text-align:center;padding:.75rem 1rem;letter-spacing:.12em}
+.concept a{color:var(--paper);text-decoration:none;border-bottom:1px solid rgba(238,233,220,.4);padding-bottom:1px;transition:color .2s,border-color .2s}
+.concept a:hover{color:var(--acid);border-color:var(--acid)}
 
 /* dialog */
 dialog{border:var(--line);background:var(--paper);color:var(--ink);width:min(1060px,94vw);max-height:92vh;
