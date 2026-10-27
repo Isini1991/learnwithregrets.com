@@ -262,20 +262,36 @@
         "d": "3:21"
       },
       {
+        "t": "My Tries My Death My Rebirth",
+        "d": "3:17"
+      },
+      {
         "t": "Soul Reunion",
         "d": "3:53"
       },
       {
-        "t": "The Game Is Over [prod. Hidden]",
+        "t": "The Game Is Over",
         "d": "3:41"
+      },
+      {
+        "t": "Saying No To Censorship [skit]",
+        "d": "0:25"
+      },
+      {
+        "t": "Stand With The Homeless",
+        "d": "3:25"
       },
       {
         "t": "Urban Outfitter",
         "d": "3:10"
       },
       {
-        "t": "Guardian Enigmatic [prod. Hidden]",
+        "t": "Guardian Enigmatic",
         "d": "3:43"
+      },
+      {
+        "t": "Patchouli Scrubs",
+        "d": "3:15"
       },
       {
         "t": "Suicide Heaven [interlude]",
@@ -290,7 +306,15 @@
         "d": "3:07"
       },
       {
-        "t": "Single Signals [prod. Hidden]",
+        "t": "Everything Is Out [skit]",
+        "d": "0:27"
+      },
+      {
+        "t": "Feeling Chills",
+        "d": "4:30"
+      },
+      {
+        "t": "Single Signals",
         "d": "4:06"
       },
       {
@@ -298,68 +322,24 @@
         "d": "3:49"
       },
       {
-        "t": "Out [outro]",
-        "d": "0:27"
-      }
-    ]
-  },
-  {
-    "title": "BURNTSCRIPTURE",
-    "url": "https://callmeafriend.bandcamp.com/album/burntscripture",
-    "asset": "assets/burntscripture.jpg",
-    "id": "1346454578",
-    "art_id": 3366602454,
-    "iso": "2026-09-30",
-    "date": "SEP 30, 2026",
-    "about": "Dedicated To Lisa \"Left Eye\" Lopes",
-    "tracks": [
-      {
-        "t": "NIRVANA [intro]",
-        "d": "2:38"
+        "t": "Homeland Security [skit]",
+        "d": "0:50"
       },
       {
-        "t": "PATCHOULISCRUBS",
-        "d": "3:15"
-      },
-      {
-        "t": "STANDWITHTHEHOMELESS",
-        "d": "3:25"
-      },
-      {
-        "t": "MYTRIESMYDEATHMYREBIRTH [prod. Hidden]",
-        "d": "3:17"
-      },
-      {
-        "t": "ONESTARABOVE",
-        "d": "2:18"
-      },
-      {
-        "t": "I'MFEELINGCHILLS",
-        "d": "4:30"
-      },
-      {
-        "t": "INSIGHTOFYOU",
-        "d": "2:51"
-      },
-      {
-        "t": "PHASEOFLIFE FREESTYLE",
+        "t": "Phase Of Life Freestyle",
         "d": "2:59"
       },
       {
-        "t": "IGETAROUNDPART2 [prod. Hidden]",
+        "t": "Misfortunate Love",
         "d": "3:28"
       },
       {
-        "t": "FREETHEGAZASTRIP [prod. Hidden]",
-        "d": "3:34"
+        "t": "In Sight Of You",
+        "d": "2:51"
       },
       {
-        "t": "LEFTMYLEFTEYE",
-        "d": "2:55"
-      },
-      {
-        "t": "GODISINTHERAIN [outro]",
-        "d": "1:29"
+        "t": "To Conclude [outro]",
+        "d": "1:59"
       }
     ]
   },
@@ -422,10 +402,6 @@
         "d": "3:17"
       },
       {
-        "t": "Dying Too Young",
-        "d": "3:38"
-      },
-      {
         "t": "Starry Night Freestyle",
         "d": "2:15"
       },
@@ -434,58 +410,6 @@
         "d": "2:04"
       }
     ]
-  },
-  {
-    "title": "Hometown",
-    "url": "https://callmeafriend.bandcamp.com/album/hometown",
-    "asset": "assets/hometown.jpg",
-    "id": "3661438351",
-    "iso": "2026-09-21",
-    "date": "SEP 21, 2026",
-    "about": "Dedicated To Bailey Moon",
-    "tracks": [
-      {
-        "t": "Say No More [skit #1]",
-        "d": "0:46"
-      },
-      {
-        "t": "Harsh Cigs",
-        "d": "3:11"
-      },
-      {
-        "t": "Cassette Player",
-        "d": "3:04"
-      },
-      {
-        "t": "Sinatra Soulmate",
-        "d": "3:27"
-      },
-      {
-        "t": "Ancestors Freestyle",
-        "d": "4:11"
-      },
-      {
-        "t": "Keep It Clean [skit #2]",
-        "d": "2:03"
-      },
-      {
-        "t": "City Of God",
-        "d": "3:13"
-      },
-      {
-        "t": "Racing Thoughts",
-        "d": "3:52"
-      },
-      {
-        "t": "Passafist",
-        "d": "2:52"
-      },
-      {
-        "t": "Nothing Serious [skit #3]",
-        "d": "1:34"
-      }
-    ],
-    "art_id": 406143863
   },
   {
     "title": "For Lovers",
@@ -501,12 +425,12 @@
         "d": "3:38"
       },
       {
-        "t": "To Be Is Not To Be",
-        "d": "2:36"
+        "t": "Cassette Player",
+        "d": "3:04"
       },
       {
-        "t": "Mother Mary",
-        "d": "2:40"
+        "t": "Sinatra Soulmate",
+        "d": "3:27"
       },
       {
         "t": "Ben Hogan's [skit #1]",
@@ -517,6 +441,10 @@
         "d": "3:00"
       },
       {
+        "t": "City Of God",
+        "d": "3:13"
+      },
+      {
         "t": "Soldier",
         "d": "2:36"
       },
@@ -525,8 +453,12 @@
         "d": "0:12"
       },
       {
-        "t": "What's Happening?",
-        "d": "4:06"
+        "t": "Passafist",
+        "d": "2:52"
+      },
+      {
+        "t": "Racing Thoughts",
+        "d": "3:52"
       },
       {
         "t": "Never Odd Or Even",
@@ -541,11 +473,15 @@
         "d": "3:54"
       },
       {
+        "t": "Harsh Cigs",
+        "d": "3:11"
+      },
+      {
         "t": "For Love",
         "d": "2:18"
       }
     ],
-    "art_id": 504999842
+    "art_id": 3048274328
   },
   {
     "title": "Meteorite For People",
@@ -561,32 +497,32 @@
         "d": "2:37"
       },
       {
-        "t": "Jpop",
-        "d": "3:32"
-      },
-      {
         "t": "Disappearing Act",
         "d": "2:27"
       },
       {
+        "t": "Stuck Around",
+        "d": "3:19"
+      },
+      {
+        "t": "Third Wheel",
+        "d": "3:25"
+      },
+      {
+        "t": "Coup De'Taught",
+        "d": "2:02"
+      },
+      {
+        "t": "Miss Stress",
+        "d": "2:30"
+      },
+      {
         "t": "Human Condition",
-        "d": "2:58"
-      },
-      {
-        "t": "Crackdown In My Streets \"Nod Your Head\"",
-        "d": "3:01"
-      },
-      {
-        "t": "Wise Choices In Thoughts",
-        "d": "2:27"
+        "d": "2:59"
       },
       {
         "t": "Wild West [skit#1]",
-        "d": "1:09"
-      },
-      {
-        "t": "Stalk All You Want",
-        "d": "4:07"
+        "d": "1:10"
       },
       {
         "t": "Minimum Wage Freestyle",
@@ -597,14 +533,35 @@
         "d": "3:07"
       },
       {
+        "t": "Street Questions - Miss Stress Part II",
+        "d": "3:33"
+      },
+      {
+        "t": "The Big Picture",
+        "d": "2:48"
+      },
+      {
         "t": "Good Company In Heaven",
         "d": "3:23"
       },
       {
-        "t": "Praying Mantis",
-        "d": "2:05"
+        "t": "Good Ole Days",
+        "d": "2:51"
+      },
+      {
+        "t": "Earth's Inertia",
+        "d": "4:00"
+      },
+      {
+        "t": "Stoney Bologna [skit#2]",
+        "d": "0:33"
+      },
+      {
+        "t": "Outside Your Reality",
+        "d": "2:34"
       }
-    ]
+    ],
+    "art_id": 1820635305
   },
   {
     "title": "Attention Getters",
@@ -617,7 +574,7 @@
     "tracks": [
       {
         "t": "Printed In The U.S.A. [skit #1]",
-        "d": "0:39"
+        "d": "0:40"
       },
       {
         "t": "My Spiritual Sense",
@@ -625,11 +582,11 @@
       },
       {
         "t": "Brown Sugar, Brown Bag",
-        "d": "3:57"
+        "d": "3:58"
       },
       {
         "t": "Mental Health Awareness [skit #2]",
-        "d": "1:17"
+        "d": "1:18"
       },
       {
         "t": "Bonita Applebum Redux \"If You Knew\"",
@@ -641,11 +598,11 @@
       },
       {
         "t": "Read In The Signs",
-        "d": "2:31"
+        "d": "2:32"
       },
       {
         "t": "Weather Prediction [skit #4]",
-        "d": "0:17"
+        "d": "0:18"
       },
       {
         "t": "Welfare",
@@ -653,7 +610,7 @@
       },
       {
         "t": "Cloud 9",
-        "d": "4:20"
+        "d": "4:21"
       },
       {
         "t": "Short But Sweet [skit #5]",
@@ -663,7 +620,8 @@
         "t": "Out Of Touch",
         "d": "7:44"
       }
-    ]
+    ],
+    "art_id": 969839048
   },
   {
     "title": "The Upbeat Rattled Simpleton",
