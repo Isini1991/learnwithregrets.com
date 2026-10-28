@@ -1,5 +1,69 @@
 [
   {
+    "title": "Proton",
+    "url": "https://callmeafriend.bandcamp.com/album/proton",
+    "asset": "assets/proton.jpg",
+    "id": "2989571209",
+    "art_id": 3491062630,
+    "iso": "2026-10-28",
+    "date": "OCT 28, 2026",
+    "about": null,
+    "tracks": [
+      {
+        "t": "Proton Peculiar [skit]",
+        "d": "2:49"
+      },
+      {
+        "t": "Someday Somewhere",
+        "d": "3:06"
+      },
+      {
+        "t": "Bending Spoons Freestyle",
+        "d": "2:32"
+      },
+      {
+        "t": "No More Propositions",
+        "d": "2:00"
+      },
+      {
+        "t": "Crown Chakra Spirits",
+        "d": "3:14"
+      },
+      {
+        "t": "Let The Freak Out",
+        "d": "2:49"
+      },
+      {
+        "t": "5-O O-Zone Freestyle",
+        "d": "1:42"
+      },
+      {
+        "t": "A.I. Girlfriend Dreams",
+        "d": "2:56"
+      },
+      {
+        "t": "What Five Years In The Psych Ward Will Do To You [\"Saga Continuation\"]",
+        "d": "3:00"
+      },
+      {
+        "t": "Time To Bounce",
+        "d": "2:17"
+      },
+      {
+        "t": "Blind Nostalgia",
+        "d": "2:19"
+      },
+      {
+        "t": "What You Immediately Do Once Your Out [skit]",
+        "d": "0:42"
+      },
+      {
+        "t": "Freedom",
+        "d": "2:11"
+      }
+    ]
+  },
+  {
     "title": "Below The Average",
     "url": "https://callmeafriend.bandcamp.com/album/below-the-average",
     "asset": "assets/below-the-average.jpg",
