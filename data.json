@@ -1,5 +1,33 @@
 [
   {
+    "title": "ProTon",
+    "url": "https://callmeafriend.bandcamp.com/album/proton",
+    "asset": "assets/proton.jpg",
+    "id": "2346395581",
+    "art_id": 492312410,
+    "iso": "2026-10-28",
+    "date": "OCT 28, 2026",
+    "about": "full length album arrives next week. for now, here are few tracks on the album. not in order yet.",
+    "tracks": [
+      {
+        "t": "Van GOgh",
+        "d": "3:14"
+      },
+      {
+        "t": "Hood And Classy",
+        "d": "3:08"
+      },
+      {
+        "t": "Light It Up",
+        "d": "3:07"
+      },
+      {
+        "t": "How It Be By Labels",
+        "d": "4:34"
+      }
+    ]
+  },
+  {
     "title": "Below The Average",
     "url": "https://callmeafriend.bandcamp.com/album/below-the-average",
     "asset": "assets/below-the-average.jpg",
@@ -378,10 +406,6 @@
         "d": "2:17"
       },
       {
-        "t": "Saraswati Bollywood",
-        "d": "3:30"
-      },
-      {
         "t": "Redemption [skit]",
         "d": "1:41"
       },
@@ -390,16 +414,16 @@
         "d": "3:43"
       },
       {
-        "t": "Dues and Don'ts",
-        "d": "3:17"
-      },
-      {
         "t": "Free The Gaza Strip",
         "d": "3:34"
       },
       {
         "t": "Starry Night Freestyle",
         "d": "2:15"
+      },
+      {
+        "t": "Saraswati Bollywood",
+        "d": "3:30"
       },
       {
         "t": "Ketchup [skit]",
