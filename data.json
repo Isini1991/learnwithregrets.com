@@ -1,28 +1,44 @@
 [
   {
-    "title": "ProTon",
-    "url": "https://callmeafriend.bandcamp.com/album/proton",
-    "asset": "assets/proton.jpg",
+    "title": "Rogue",
+    "url": "https://callmeafriend.bandcamp.com/album/rogue",
+    "asset": "assets/rogue.jpg",
     "id": "2346395581",
-    "art_id": 492312410,
+    "art_id": 2564494799,
     "iso": "2026-10-28",
     "date": "OCT 28, 2026",
     "about": "full length album arrives next week. for now, here are few tracks on the album. not in order yet.",
     "tracks": [
       {
-        "t": "Van GOgh",
-        "d": "3:14"
+        "t": "Eternal Expression",
+        "d": "3:03"
       },
       {
         "t": "Hood And Classy",
         "d": "3:08"
       },
       {
-        "t": "Light It Up",
+        "t": "Somewhere Elsewhere",
+        "d": "2:32"
+      },
+      {
+        "t": "Gun Slang",
         "d": "3:07"
       },
       {
-        "t": "How It Be By Labels",
+        "t": "Exhaustion",
+        "d": "2:19"
+      },
+      {
+        "t": "Always Open",
+        "d": "2:02"
+      },
+      {
+        "t": "Over Rebellion",
+        "d": "2:30"
+      },
+      {
+        "t": "Labels",
         "d": "4:34"
       }
     ]

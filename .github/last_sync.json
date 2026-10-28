@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-28T01:18:03.226699+00:00",
+  "timestamp": "2026-10-28T08:23:57.521028+00:00",
   "total_releases": 19,
-  "latest_album": "ProTon",
+  "latest_album": "Rogue",
   "changes": [
-    "NEW ALBUM: ProTon (https://callmeafriend.bandcamp.com/album/proton)",
-    "UPDATED TRACKLIST for The Akkadian Abstract: 12 -> 11 tracks",
-    "CATALOG ORDER/COUNT CHANGED: 18 -> 19 albums"
+    "NEW ALBUM: Rogue (https://callmeafriend.bandcamp.com/album/rogue)",
+    "REMOVED ALBUMS FROM BANDCAMP: ProTon",
+    "CATALOG ORDER/COUNT CHANGED: 19 -> 19 albums"
   ]
 }
