@@ -86,10 +86,6 @@
     "about": null,
     "tracks": [
       {
-        "t": "Check Your Holster",
-        "d": "2:30"
-      },
-      {
         "t": "Best Believe",
         "d": "3:52"
       },
@@ -112,6 +108,10 @@
       {
         "t": "Metamorphic",
         "d": "2:47"
+      },
+      {
+        "t": "Check Your Holster",
+        "d": "2:30"
       },
       {
         "t": "Beer Vending Machines",
@@ -304,10 +304,6 @@
       {
         "t": "Life Among Angels",
         "d": "3:11"
-      },
-      {
-        "t": "Absent Mind Freestyle",
-        "d": "3:13"
       },
       {
         "t": "On Your Free Will [outro]",

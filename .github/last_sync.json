@@ -1,14 +1,9 @@
 {
-  "timestamp": "2026-10-30T19:18:53.797489+00:00",
+  "timestamp": "2026-10-30T23:42:38.620418+00:00",
   "total_releases": 17,
   "latest_album": "Proton",
   "changes": [
-    "UPDATED TRACKLIST for Philosopher's Stoned: 15 -> 13 tracks",
-    "UPDATED TRACKLIST for Sweater Weather: 22 -> 18 tracks",
-    "UPDATED COVER: The Upbeat Rattled Simpleton",
-    "UPDATED TRACKLIST for The Upbeat Rattled Simpleton: 12 -> 19 tracks",
-    "UPDATED ABOUT for The Upbeat Rattled Simpleton",
-    "REMOVED ALBUMS FROM BANDCAMP: Attention Getters, The Akkadian Abstract",
-    "CATALOG ORDER/COUNT CHANGED: 19 -> 17 albums"
+    "UPDATED TRACKLIST for Below The Average: 13 -> 13 tracks",
+    "UPDATED TRACKLIST for Philosopher's Stoned: 13 -> 12 tracks"
   ]
 }
