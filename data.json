@@ -4,13 +4,13 @@
     "url": "https://callmeafriend.bandcamp.com/album/no-key-no-lock-unlocks-the-key",
     "asset": "assets/no-key-no-lock-unlocks-the-key.jpg",
     "id": "3254670095",
-    "art_id": 3873498719,
+    "art_id": 3089423345,
     "iso": "2026-10-30",
     "date": "OCT 30, 2026",
     "about": "Dedicated To My Great Grandfather I never met because someone drowned him in the Hudson River before my grandfather even knew him. This is dedicated to him; a lost forgotten soul that I will never forget...",
     "tracks": [
       {
-        "t": "3rd Eye Love [skit]",
+        "t": "3rd Kind Love [introduction]",
         "d": "0:41"
       },
       {
@@ -22,40 +22,56 @@
         "d": "3:14"
       },
       {
-        "t": "Soft Spoken",
-        "d": "4:34"
+        "t": "Beliefs About Love [skit]",
+        "d": "0:20"
+      },
+      {
+        "t": "Prohibition \"Soft Spoken\"",
+        "d": "3:55"
       },
       {
         "t": "Summoning and Preaching At Heaven's Gate",
         "d": "2:59"
       },
       {
-        "t": "Immigration Policy",
-        "d": "2:47"
+        "t": "Disapproval Of Love [skit]",
+        "d": "0:48"
       },
       {
-        "t": "Va fa Napoli",
-        "d": "3:38"
+        "t": "Peace Murder Inc.",
+        "d": "2:47"
       },
       {
         "t": "Heart Brake",
         "d": "4:14"
       },
       {
+        "t": "Still Love In Them",
+        "d": "3:10"
+      },
+      {
         "t": "Tibetan Key Treatise",
         "d": "4:29"
       },
       {
-        "t": "Pondering Love",
-        "d": "3:26"
+        "t": "Peacock Feathers [skit]",
+        "d": "0:11"
+      },
+      {
+        "t": "Va Fa Napoli",
+        "d": "3:38"
+      },
+      {
+        "t": "MF DOOM's Lovely Tomb",
+        "d": "3:06"
       },
       {
         "t": "Hopeless Hypnosis",
         "d": "2:07"
       },
       {
-        "t": "Beliefs About Love [outro]",
-        "d": "0:20"
+        "t": "Open Yet Closed [outro]",
+        "d": "1:36"
       }
     ]
   },
