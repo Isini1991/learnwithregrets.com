@@ -1,5 +1,65 @@
 [
   {
+    "title": "Bop Speed",
+    "url": "https://callmeafriend.bandcamp.com/album/bop-speed",
+    "asset": "assets/bop-speed.jpg",
+    "id": "1207703443",
+    "art_id": 1433116869,
+    "iso": "2026-11-01",
+    "date": "NOV 01, 2026",
+    "about": "Dedicated To John Coltrane",
+    "tracks": [
+      {
+        "t": "Radiant Sounds [intro]",
+        "d": "2:19"
+      },
+      {
+        "t": "Bop Speed",
+        "d": "5:35"
+      },
+      {
+        "t": "Silenced To Obscurity",
+        "d": "3:21"
+      },
+      {
+        "t": "A Clash",
+        "d": "3:59"
+      },
+      {
+        "t": "Cold Trane",
+        "d": "2:17"
+      },
+      {
+        "t": "Self Combust",
+        "d": "3:00"
+      },
+      {
+        "t": "Blue Trane [interlude]",
+        "d": "0:49"
+      },
+      {
+        "t": "That's A Shame",
+        "d": "9:57"
+      },
+      {
+        "t": "Gray Cloudy Daze",
+        "d": "2:10"
+      },
+      {
+        "t": "Your Highness",
+        "d": "2:29"
+      },
+      {
+        "t": "Rembrandt",
+        "d": "2:49"
+      },
+      {
+        "t": "The Is No Ending, No Beginning, But There Is Something In The Middle [outro]",
+        "d": "1:29"
+      }
+    ]
+  },
+  {
     "title": "No Key, No Lock, Unlocks The Key",
     "url": "https://callmeafriend.bandcamp.com/album/no-key-no-lock-unlocks-the-key",
     "asset": "assets/no-key-no-lock-unlocks-the-key.jpg",
