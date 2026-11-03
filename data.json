@@ -10,8 +10,8 @@
     "about": "Dedicated To John Coltrane and his brother, Sonny Rollins",
     "tracks": [
       {
-        "t": "Radiant Sounds [interview#1]",
-        "d": "2:19"
+        "t": "Blue Trane [introduction]",
+        "d": "0:51"
       },
       {
         "t": "Spontaneous Combustion In Chicago",
@@ -26,14 +26,6 @@
         "d": "2:30"
       },
       {
-        "t": "Blue Trane [interview#2]",
-        "d": "0:49"
-      },
-      {
-        "t": "Unit 100 Freestyle",
-        "d": "3:59"
-      },
-      {
         "t": "Black And Blue",
         "d": "2:10"
       },
@@ -42,24 +34,24 @@
         "d": "2:17"
       },
       {
-        "t": "The Is No Ending, No Beginning, But There Is Something In The Middle [interview#3]",
-        "d": "1:29"
-      },
-      {
         "t": "The Gravy Train",
         "d": "2:10"
       },
       {
-        "t": "3rd Eye Chemist Freestyle",
-        "d": "2:04"
+        "t": "Manchu Detachment 731 Freestyle",
+        "d": "3:59"
       },
       {
-        "t": "That's A Shame",
-        "d": "9:57"
+        "t": "Sonny Boy",
+        "d": "2:30"
       },
       {
         "t": "Steal The Floor",
         "d": "6:40"
+      },
+      {
+        "t": "Speed Bop",
+        "d": "9:57"
       }
     ]
   },
