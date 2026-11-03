@@ -7,11 +7,15 @@
     "art_id": 1433116869,
     "iso": "2026-11-01",
     "date": "NOV 01, 2026",
-    "about": "Dedicated To John Coltrane and his brother, Sonny Rollins",
+    "about": "Dedicated To John Coltrane and his brother, Sonny Rollins\r\n\r\nI want to dedicate this album also to Ian James. His samples and beats are astounding and I want to thank him and support his work.",
     "tracks": [
       {
         "t": "Blue Trane [introduction]",
         "d": "0:51"
+      },
+      {
+        "t": "Holy Grail In Braille",
+        "d": "3:17"
       },
       {
         "t": "Spontaneous Combustion In Chicago",
@@ -34,12 +38,12 @@
         "d": "2:17"
       },
       {
-        "t": "The Gravy Train",
-        "d": "2:10"
-      },
-      {
         "t": "Manchu Detachment 731 Freestyle",
         "d": "3:59"
+      },
+      {
+        "t": "The Gravy Train",
+        "d": "2:10"
       },
       {
         "t": "Sonny Boy",
@@ -52,6 +56,18 @@
       {
         "t": "Speed Bop",
         "d": "9:57"
+      },
+      {
+        "t": "Trigger On Improvisation",
+        "d": "9:23"
+      },
+      {
+        "t": "Story Of My First Live Show",
+        "d": "3:23"
+      },
+      {
+        "t": "What's The Matter [outro]",
+        "d": "4:15"
       }
     ]
   },
