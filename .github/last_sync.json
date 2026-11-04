@@ -1,6 +1,10 @@
 {
-  "timestamp": "2026-11-04T12:02:46.096765+00:00",
-  "total_releases": 19,
+  "timestamp": "2026-11-04T19:42:49.384114+00:00",
+  "total_releases": 18,
   "latest_album": "Bop Speed",
-  "changes": []
+  "changes": [
+    "UPDATED TRACKLIST for Bop Speed: 12 -> 21 tracks",
+    "REMOVED ALBUMS FROM BANDCAMP: Below The Average",
+    "CATALOG ORDER/COUNT CHANGED: 19 -> 18 albums"
+  ]
 }

@@ -14,8 +14,20 @@
         "d": "0:51"
       },
       {
+        "t": "Just Rochel's Whispers",
+        "d": "3:56"
+      },
+      {
         "t": "Holy Grail In Braille",
         "d": "3:17"
+      },
+      {
+        "t": "By My Side",
+        "d": "2:55"
+      },
+      {
+        "t": "Alive No More",
+        "d": "2:48"
       },
       {
         "t": "Spontaneous Combustion In Chicago",
@@ -24,6 +36,10 @@
       {
         "t": "White Sox Freestyle",
         "d": "2:52"
+      },
+      {
+        "t": "Up Till 6 In The Morning",
+        "d": "4:34"
       },
       {
         "t": "Grits and Porgies",
@@ -46,6 +62,10 @@
         "d": "2:30"
       },
       {
+        "t": "Best Believe",
+        "d": "3:52"
+      },
+      {
         "t": "Steal The Floor",
         "d": "6:40"
       },
@@ -56,6 +76,22 @@
       {
         "t": "Story Of My First Live Show",
         "d": "3:23"
+      },
+      {
+        "t": "Deadly Notion",
+        "d": "2:21"
+      },
+      {
+        "t": "Metamorphic",
+        "d": "2:47"
+      },
+      {
+        "t": "How We Felt When We Both Don't Listen",
+        "d": "3:02"
+      },
+      {
+        "t": "Masters Along The Path",
+        "d": "3:40"
       }
     ]
   },
@@ -208,70 +244,6 @@
       {
         "t": "Reminiscing Over Sentiment",
         "d": "2:03"
-      }
-    ]
-  },
-  {
-    "title": "Below The Average",
-    "url": "https://callmeafriend.bandcamp.com/album/below-the-average",
-    "asset": "assets/below-the-average.jpg",
-    "id": "1949260500",
-    "art_id": 1599150121,
-    "iso": "2026-10-25",
-    "date": "OCT 25, 2026",
-    "about": null,
-    "tracks": [
-      {
-        "t": "Best Believe",
-        "d": "3:52"
-      },
-      {
-        "t": "By My Side",
-        "d": "2:55"
-      },
-      {
-        "t": "Just Rochel's Whispers",
-        "d": "3:56"
-      },
-      {
-        "t": "Alive No More",
-        "d": "2:48"
-      },
-      {
-        "t": "Up Till 6 In The Morning",
-        "d": "4:34"
-      },
-      {
-        "t": "Metamorphic",
-        "d": "2:47"
-      },
-      {
-        "t": "Check Your Holster",
-        "d": "2:30"
-      },
-      {
-        "t": "Beer Vending Machines",
-        "d": "2:11"
-      },
-      {
-        "t": "Deadly Notions",
-        "d": "2:21"
-      },
-      {
-        "t": "Since You Didn't Know",
-        "d": "3:29"
-      },
-      {
-        "t": "Switchblade Switchup Freestyle",
-        "d": "2:22"
-      },
-      {
-        "t": "How We Felt When We Both Don't Listen",
-        "d": "3:02"
-      },
-      {
-        "t": "Masters Along The Path",
-        "d": "3:40"
       }
     ]
   },
