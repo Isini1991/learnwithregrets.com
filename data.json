@@ -4,10 +4,10 @@
     "url": "https://callmeafriend.bandcamp.com/album/bop-speed",
     "asset": "assets/bop-speed.jpg",
     "id": "1207703443",
-    "art_id": 1433116869,
+    "art_id": 522947074,
     "iso": "2026-11-01",
     "date": "NOV 01, 2026",
-    "about": "Dedicated To John Coltrane and his brother, Sonny Rollins\r\n\r\nI want to dedicate this album also to Ian James. His samples and beats are astounding and I want to thank him and support his work.",
+    "about": "Dedicated To John Coltrane and his brother, Sonny Rollins\r\n\r\nI also want to dedicate this album also to Ian James, Amphy, and Stoic. Their samples and beats are astounding and I want to thank them and support their works.",
     "tracks": [
       {
         "t": "Blue Trane [introduction]",
@@ -30,10 +30,6 @@
         "d": "2:48"
       },
       {
-        "t": "Spontaneous Combustion In Chicago",
-        "d": "3:00"
-      },
-      {
         "t": "White Sox Freestyle",
         "d": "2:52"
       },
@@ -46,12 +42,24 @@
         "d": "2:30"
       },
       {
-        "t": "Black And Blue",
-        "d": "2:10"
+        "t": "Masters Along The Path",
+        "d": "3:40"
+      },
+      {
+        "t": "Steal The Floor",
+        "d": "6:40"
+      },
+      {
+        "t": "Auditory Phonetic Freestyle",
+        "d": "2:33"
       },
       {
         "t": "Classified Beautiful Things",
         "d": "2:17"
+      },
+      {
+        "t": "Welcome To The New Age",
+        "d": "3:29"
       },
       {
         "t": "The Gravy Train",
@@ -66,20 +74,28 @@
         "d": "3:52"
       },
       {
-        "t": "Steal The Floor",
-        "d": "6:40"
+        "t": "Cool Your Jets",
+        "d": "4:11"
       },
       {
         "t": "Speed Bop",
         "d": "9:57"
       },
       {
-        "t": "Story Of My First Live Show",
-        "d": "3:23"
+        "t": "Articulatory Phonetic",
+        "d": "2:30"
+      },
+      {
+        "t": "Black And Blue",
+        "d": "2:10"
       },
       {
         "t": "Deadly Notion",
         "d": "2:21"
+      },
+      {
+        "t": "Story Of My First Live Show",
+        "d": "3:23"
       },
       {
         "t": "Metamorphic",
@@ -90,8 +106,16 @@
         "d": "3:02"
       },
       {
-        "t": "Masters Along The Path",
-        "d": "3:40"
+        "t": "Spontaneous Combustion In Chicago",
+        "d": "3:00"
+      },
+      {
+        "t": "Palpebral Cerebral",
+        "d": "2:45"
+      },
+      {
+        "t": "Acoustic Phonetic",
+        "d": "3:04"
       }
     ]
   },
