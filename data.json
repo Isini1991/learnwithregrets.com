@@ -1,5 +1,57 @@
 [
   {
+    "title": "Acapulco Gold",
+    "url": "https://callmeafriend.bandcamp.com/album/acapulco-gold",
+    "asset": "assets/acapulco-gold.jpg",
+    "id": "529905995",
+    "art_id": 4192850814,
+    "iso": "2026-11-21",
+    "date": "NOV 21, 2026",
+    "about": null,
+    "tracks": [
+      {
+        "t": "Open Yr Eyelid [intro]",
+        "d": "0:59"
+      },
+      {
+        "t": "History Of My Birth",
+        "d": "2:21"
+      },
+      {
+        "t": "Solo Vows",
+        "d": "2:44"
+      },
+      {
+        "t": "Remnants Of Being Drugged",
+        "d": "4:22"
+      },
+      {
+        "t": "No Sense Ability",
+        "d": "5:02"
+      },
+      {
+        "t": "90's Barbecue Freestyle",
+        "d": "3:26"
+      },
+      {
+        "t": "Out Of Check",
+        "d": "5:31"
+      },
+      {
+        "t": "Go Figure",
+        "d": "4:42"
+      },
+      {
+        "t": "Another Lesson, Another Blessing",
+        "d": "2:17"
+      },
+      {
+        "t": "Shhhh [outro]",
+        "d": "0:45"
+      }
+    ]
+  },
+  {
     "title": "Bop Speed",
     "url": "https://callmeafriend.bandcamp.com/album/bop-speed",
     "asset": "assets/bop-speed.jpg",
