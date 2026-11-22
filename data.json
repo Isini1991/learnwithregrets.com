@@ -4,50 +4,66 @@
     "url": "https://callmeafriend.bandcamp.com/album/acapulco-gold",
     "asset": "assets/acapulco-gold.jpg",
     "id": "529905995",
-    "art_id": 4192850814,
+    "art_id": 2492046351,
     "iso": "2026-11-21",
     "date": "NOV 21, 2026",
     "about": null,
     "tracks": [
       {
-        "t": "Open Yr Eyelid [intro]",
-        "d": "0:59"
+        "t": "shhhh [intro]",
+        "d": "0:45"
       },
       {
-        "t": "History Of My Birth",
-        "d": "2:21"
-      },
-      {
-        "t": "Solo Vows",
-        "d": "2:44"
-      },
-      {
-        "t": "Remnants Of Being Drugged",
-        "d": "4:22"
-      },
-      {
-        "t": "No Sense Ability",
+        "t": "el que todo le temía",
         "d": "5:02"
       },
       {
-        "t": "90's Barbecue Freestyle",
+        "t": "solo vows",
+        "d": "2:44"
+      },
+      {
+        "t": "oh tú que vas a buscar dignas cosas de loar",
+        "d": "4:22"
+      },
+      {
+        "t": "90's barbecue freestyle",
         "d": "3:26"
       },
       {
-        "t": "Out Of Check",
+        "t": "growing up in a military family [skit]",
+        "d": "1:01"
+      },
+      {
+        "t": "portrait of a young man writing",
+        "d": "2:21"
+      },
+      {
+        "t": "el que la paz y la guerra en su mano la tenía",
         "d": "5:31"
       },
       {
-        "t": "Go Figure",
+        "t": "go figure",
         "d": "4:42"
       },
       {
-        "t": "Another Lesson, Another Blessing",
+        "t": "psych ward [skit]",
+        "d": "1:08"
+      },
+      {
+        "t": "pare tu camino, no cures de más andar",
         "d": "2:17"
       },
       {
-        "t": "Shhhh [outro]",
-        "d": "0:45"
+        "t": "in the trumpet player's eyes",
+        "d": "4:10"
+      },
+      {
+        "t": "keep it real & keep it cool",
+        "d": "2:00"
+      },
+      {
+        "t": "wishing i was michelangelo, but ending up as raphael [outro]",
+        "d": "0:59"
       }
     ]
   },
