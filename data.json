@@ -1,57 +1,17 @@
 [
   {
-    "title": "Acapulco Gold",
-    "url": "https://callmeafriend.bandcamp.com/album/acapulco-gold",
-    "asset": "assets/acapulco-gold.jpg",
+    "title": "Holy Grail In Braille",
+    "url": "https://callmeafriend.bandcamp.com/album/holy-grail-in-braille",
+    "asset": "assets/holy-grail-in-braille.jpg",
     "id": "529905995",
-    "art_id": 2492046351,
+    "art_id": 3541698180,
     "iso": "2026-11-21",
     "date": "NOV 21, 2026",
     "about": null,
     "tracks": [
       {
-        "t": "shhhh [intro]",
-        "d": "0:45"
-      },
-      {
-        "t": "el que todo le temía",
-        "d": "5:02"
-      },
-      {
-        "t": "solo vows",
-        "d": "2:44"
-      },
-      {
-        "t": "oh tú que vas a buscar dignas cosas de loar",
-        "d": "4:22"
-      },
-      {
-        "t": "90's barbecue freestyle",
-        "d": "3:26"
-      },
-      {
-        "t": "growing up in a military family [skit]",
-        "d": "1:01"
-      },
-      {
-        "t": "portrait of a young man writing",
-        "d": "2:21"
-      },
-      {
-        "t": "el que la paz y la guerra en su mano la tenía",
-        "d": "5:31"
-      },
-      {
-        "t": "go figure",
-        "d": "4:42"
-      },
-      {
-        "t": "psych ward [skit]",
-        "d": "1:08"
-      },
-      {
-        "t": "pare tu camino, no cures de más andar",
-        "d": "2:17"
+        "t": "fresh",
+        "d": "3:08"
       },
       {
         "t": "in the trumpet player's eyes",
@@ -62,8 +22,36 @@
         "d": "2:00"
       },
       {
-        "t": "wishing i was michelangelo, but ending up as raphael [outro]",
-        "d": "0:59"
+        "t": "go figure",
+        "d": "4:42"
+      },
+      {
+        "t": "portrait of young man writing freestyle",
+        "d": "3:26"
+      },
+      {
+        "t": "spending your entire twenties in a sala de psiquiatría [skit]",
+        "d": "1:08"
+      },
+      {
+        "t": "el que todo le temía",
+        "d": "5:02"
+      },
+      {
+        "t": "oh tú que vas a buscar dignas cosas de loar",
+        "d": "4:22"
+      },
+      {
+        "t": "el que la paz y la guerra en su mano la tenía",
+        "d": "5:31"
+      },
+      {
+        "t": "pare tu camino, no cures de más andar",
+        "d": "2:17"
+      },
+      {
+        "t": "refrescar",
+        "d": "2:33"
       }
     ]
   },
