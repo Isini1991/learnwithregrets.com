@@ -1,17 +1,17 @@
 [
   {
-    "title": "Holy Grail In Braille",
-    "url": "https://callmeafriend.bandcamp.com/album/holy-grail-in-braille",
-    "asset": "assets/holy-grail-in-braille.jpg",
+    "title": "Chronicles IX: Holy Grail In Braille",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-ix-holy-grail-in-braille",
+    "asset": "assets/chronicles-ix-holy-grail-in-braille.jpg",
     "id": "529905995",
-    "art_id": 3541698180,
+    "art_id": 4157858685,
     "iso": "2026-11-21",
     "date": "NOV 21, 2026",
     "about": null,
     "tracks": [
       {
-        "t": "off and on",
-        "d": "4:08"
+        "t": "untitled freestyle",
+        "d": "4:11"
       },
       {
         "t": "in the trumpet player's eyes",
@@ -22,12 +22,16 @@
         "d": "2:00"
       },
       {
-        "t": "go figure",
-        "d": "4:42"
+        "t": "in search of the modern crusade",
+        "d": "4:50"
       },
       {
-        "t": "gun slang",
+        "t": "evol vernacular",
         "d": "4:45"
+      },
+      {
+        "t": "go figure",
+        "d": "4:42"
       },
       {
         "t": "ピストル俗語フリースタイル",
@@ -42,31 +46,27 @@
         "d": "5:02"
       },
       {
-        "t": "手上拎住和平同戰爭嘅人",
+        "t": "無理心中",
         "d": "3:10"
-      },
-      {
-        "t": "Oh, tu ca vai â circata di cosi digni di lodi",
-        "d": "4:22"
       },
       {
         "t": "bītki īškun, lā tadaggag ana alākim",
         "d": "1:43"
       },
       {
-        "t": "untitled freestyle",
-        "d": "4:11"
-      },
-      {
         "t": "fāyiq",
         "d": "2:33"
+      },
+      {
+        "t": "트렌드를 좇느라 저지르는 잘못들",
+        "d": "4:06"
       }
     ]
   },
   {
-    "title": "Bop Speed",
-    "url": "https://callmeafriend.bandcamp.com/album/bop-speed",
-    "asset": "assets/bop-speed.jpg",
+    "title": "Chronicles VIII: Bop Speed",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-viii-bop-speed",
+    "asset": "assets/chronicles-viii-bop-speed.jpg",
     "id": "1207703443",
     "art_id": 522947074,
     "iso": "2026-11-01",
@@ -188,9 +188,9 @@
     ]
   },
   {
-    "title": "No Key, No Lock, Unlocks The Key",
-    "url": "https://callmeafriend.bandcamp.com/album/no-key-no-lock-unlocks-the-key",
-    "asset": "assets/no-key-no-lock-unlocks-the-key.jpg",
+    "title": "Chronicles VII: No Key, No Lock, Unlocks The Key",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-vii-no-key-no-lock-unlocks-the-key",
+    "asset": "assets/chronicles-vii-no-key-no-lock-unlocks-the-key.jpg",
     "id": "3254670095",
     "art_id": 3089423345,
     "iso": "2026-10-30",
@@ -264,9 +264,9 @@
     ]
   },
   {
-    "title": "Proton",
-    "url": "https://callmeafriend.bandcamp.com/album/proton",
-    "asset": "assets/proton.jpg",
+    "title": "Chronicles VI: Proton",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-vi-proton",
+    "asset": "assets/chronicles-vi-proton.jpg",
     "id": "2989571209",
     "art_id": 1843089826,
     "iso": "2026-10-28",
@@ -452,9 +452,9 @@
     ]
   },
   {
-    "title": "Philosopher's Stoned",
-    "url": "https://callmeafriend.bandcamp.com/album/philosophers-stoned",
-    "asset": "assets/philosophers-stoned.jpg",
+    "title": "Chronicles V: Philosopher's Stoned",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-v-philosophers-stoned",
+    "asset": "assets/chronicles-v-philosophers-stoned.jpg",
     "id": "2108546381",
     "art_id": 3955735218,
     "iso": "2026-10-06",
@@ -516,9 +516,9 @@
     ]
   },
   {
-    "title": "Sweater Weather",
-    "url": "https://callmeafriend.bandcamp.com/album/sweater-weather",
-    "asset": "assets/sweater-weather.jpg",
+    "title": "Chronicles IV: Sweater Weather",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-iv-sweater-weather",
+    "asset": "assets/chronicles-iv-sweater-weather.jpg",
     "id": "827651762",
     "art_id": 538226894,
     "iso": "2026-10-02",
@@ -600,10 +600,11 @@
     ]
   },
   {
-    "title": "For Lovers",
-    "url": "https://callmeafriend.bandcamp.com/album/for-lovers",
-    "asset": "assets/for-lovers.jpg",
+    "title": "Chronicles III: For Lovers",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-iii-for-lovers",
+    "asset": "assets/chronicles-iii-for-lovers.jpg",
     "id": "548237191",
+    "art_id": 3048274328,
     "iso": "2026-09-17",
     "date": "SEP 17, 2026",
     "about": "dedicated to Astrud Gilberto, TLC, and Aaliyah",
@@ -668,14 +669,14 @@
         "t": "For Love",
         "d": "2:18"
       }
-    ],
-    "art_id": 3048274328
+    ]
   },
   {
-    "title": "Meteorite For People",
-    "url": "https://callmeafriend.bandcamp.com/album/meteorite-for-people",
-    "asset": "assets/meteorite-for-people.jpg",
+    "title": "Chronicles II: Meteorite For People",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-ii-meteorite-for-people",
+    "asset": "assets/chronicles-ii-meteorite-for-people.jpg",
     "id": "3767363917",
+    "art_id": 1820635305,
     "iso": "2026-09-16",
     "date": "SEP 16, 2026",
     "about": "Dedicated to friends and fans in Japan and Abbey Lincoln",
@@ -741,21 +742,17 @@
         "d": "4:00"
       },
       {
-        "t": "Stoney Bologna [skit#2]",
-        "d": "0:33"
-      },
-      {
         "t": "Outside Your Reality",
         "d": "2:34"
       }
-    ],
-    "art_id": 1820635305
+    ]
   },
   {
-    "title": "The Upbeat Rattled Simpleton",
-    "url": "https://callmeafriend.bandcamp.com/album/the-upbeat-rattled-simpleton",
-    "asset": "assets/the-upbeat-rattled-simpleton.jpg",
+    "title": "Chronicles I: The Upbeat Rattled Simpleton",
+    "url": "https://callmeafriend.bandcamp.com/album/chronicles-i-the-upbeat-rattled-simpleton",
+    "asset": "assets/chronicles-i-the-upbeat-rattled-simpleton.jpg",
     "id": "2134894066",
+    "art_id": 489923577,
     "iso": "2026-09-08",
     "date": "SEP 08, 2026",
     "about": "Dedicated To MF DOOM",
@@ -777,7 +774,7 @@
         "d": "3:50"
       },
       {
-        "t": "If God Didn't Exist, Then Why Are We Always Talk About Him?",
+        "t": "If God Didn't Exist, Then Why Are We Always Talking About Him?",
         "d": "5:20"
       },
       {
@@ -836,8 +833,7 @@
         "t": "Out Of Touch",
         "d": "7:44"
       }
-    ],
-    "art_id": 489923577
+    ]
   },
   {
     "title": "One Verse For All",
