@@ -7,27 +7,55 @@
     "art_id": 1906403928,
     "iso": "2026-11-27",
     "date": "NOV 27, 2026",
-    "about": "full album arriving soon",
+    "about": "dedicated to VB",
     "tracks": [
+      {
+        "t": "doom's day [intro]",
+        "d": "1:18"
+      },
+      {
+        "t": "herb lip smacking",
+        "d": "2:08"
+      },
       {
         "t": "prognosticator",
         "d": "3:07"
       },
       {
-        "t": "layer of plaster",
-        "d": "2:55"
-      },
-      {
-        "t": "end of thoughts",
-        "d": "3:12"
+        "t": "grindin' part II",
+        "d": "3:09"
       },
       {
         "t": "nothing to be read",
         "d": "3:07"
       },
       {
-        "t": "remy lebeau",
+        "t": "end of thoughts",
+        "d": "3:12"
+      },
+      {
+        "t": "layer of plaster",
+        "d": "2:55"
+      },
+      {
+        "t": "hood and classy",
+        "d": "2:26"
+      },
+      {
+        "t": "remy",
         "d": "4:28"
+      },
+      {
+        "t": "almighty one",
+        "d": "5:04"
+      },
+      {
+        "t": "untitled freestyle #2",
+        "d": "2:29"
+      },
+      {
+        "t": "the chronicles end [outro]",
+        "d": "3:04"
       }
     ]
   },
